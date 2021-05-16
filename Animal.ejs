@@ -1,0 +1,10 @@
+<%
+  const name = locals.name
+  const legs = locals.legs
+  const canFly = locals.canFly
+-%>
+class <%- name %>() {
+	fun getLegNumber(): Integer = <%- legs %>
+
+	fun canFly(): Boolean =  <%- canFly %>
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "animals": [
+  	{
+  		"name":"Dog",
+  		"legs":4,
+  		"canFly":false
+  	},
+  	{
+  		"name":"Eagle",
+  		"legs":2,
+  		"canFly":true
+  	},
+  	{
+  		"name":"Ant",
+  		"legs":6,
+  		"canFly":false
+  	},
+  	{
+  		"name":"Spider",
+  		"legs":8,
+  		"canFly":false
+  	},
+  	{
+  		"name":"Whale",
+  		"legs":0,
+  		"canFly":false
+  	},
+  	{
+  		"name":"Tuna",
+  		"legs":0,
+  		"canFly":false
+  	}
+  ]
+}
