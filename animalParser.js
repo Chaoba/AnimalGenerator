@@ -6,7 +6,6 @@ const ejs = require('ejs');
 require('./utils');
 
 const animalCollections = require('./animals.json');
-console.warn(`* Updating outdated file '${animalCollections.version}'`);
 
 const animalKotlin = ejs.compile(fs.readFileSync('./Animal.ejs', 'utf8'), {strict: true});
 for (const animal of animalCollections.animals) {

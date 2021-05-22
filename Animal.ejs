@@ -3,8 +3,21 @@
   const legs = locals.legs
   const canFly = locals.canFly
 -%>
-class <%- name %>() {
-	fun getLegNumber(): Integer = <%- legs %>
+/**
+ * Class for animal <%- name %>
+ */
+class <%- name %>() : Animal {
+    /**
+     * Get the legs number of this animal.
+     *
+     * @return the legs number.
+     */
+    override fun getLegsNumber(): Integer = <%- legs %>
 
-	fun canFly(): Boolean =  <%- canFly %>
+    /**
+     * Whether this animal can fly or not.
+     *
+     * @return true if this animal can fly, otherwise false.
+     */
+    override fun canFly(): Boolean =  <%- canFly %>
 }
