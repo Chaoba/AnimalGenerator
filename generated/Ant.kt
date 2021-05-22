@@ -1,26 +1,20 @@
-<%
-  const name = locals.name
-  const legs = locals.legs
-  const canFly = locals.canFly
-  const type = locals.type
--%>
 /**
- * Class for animal <%- name %>
+ * Class for animal Ant
  */
-class <%- name %>() : <%- type %> {
+class Ant() : Insect {
     /**
      * Get the legs number of this animal.
      *
      * @return the legs number.
      */
-    override fun getLegsNumber(): Integer = <%- legs %>
+    override fun getLegsNumber(): Integer = 6
 
     /**
      * Whether this animal can fly or not.
      *
      * @return true if this animal can fly, otherwise false.
      */
-    override fun canFly(): Boolean = <%- canFly %>
+    override fun canFly(): Boolean = false
 
     /**
      * Whether this animal can swim or not.
@@ -28,10 +22,6 @@ class <%- name %>() : <%- type %> {
      * @return true is this animal can swim, otherwise false.
      */
     override fun canSwim(): Boolean {
-<% if (type == 'Fish' || name == 'Whale' || name == 'Dog') { -%>
-        return true
-<% } else { -%>
         return false
-<% } -%>
     }
 }

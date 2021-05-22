@@ -12,4 +12,11 @@ interface Animal {
      * @return true if this animal can fly, otherwise false.
      */
     fun canFly(): Boolean
+
+    /**
+     * Whether this animal can swim or not.
+     *
+     * @return true is this animal can swim, otherwise false.
+     */
+    fun canSwim(): Boolean
 }
